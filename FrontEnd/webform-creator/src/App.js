@@ -1,22 +1,28 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar/navBar';
-import CreateWebForm from './components/createWebForm';
 import SavedWebForms from './components/savedWebforms';
 import FAQ from './components/FAQ';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
+import HomePage from './components/HomePage/HomePage';
+import CreateWebForm from './components/CreateWebForm';
+import WebFormTemplates from './components/WebFormTemplates/WebFormTemplates';
+import SideBar from './components/Sidebar/sidebar';
+import Logout from './components/Logout/logout';
+import Settings from './components/Settings/settings';
 
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
+      <SideBar />
       <div>
         <Switch>
-          <Route path="/create-web-form" component={CreateWebForm} />
-          <Route path="/saved-web-forms" component={SavedWebForms} />
+          <Route path="/create-webform" component={CreateWebForm} />
+          <Route path="/saved-webforms" component={SavedWebForms} />
+          <Route path="/webform-templates" component={WebFormTemplates} />
           <Route path="/faq" component={FAQ} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/logout" component={Logout} />
           <Route path="/" component={HomePage} />
         </Switch>
       </div>

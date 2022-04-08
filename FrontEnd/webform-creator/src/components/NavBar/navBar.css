@@ -1,5 +1,5 @@
 .nav-styling {
-    padding-left: 50px;
+    padding-left: 150px;
     padding-right: 20px;
 }
 
@@ -7,10 +7,20 @@
     text-align: center;
     justify-content: center;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .logo {
-    font-family: 'Papyrus';
-    color: #141BD5;
     position: absolute;
+}
+
+#logoImage {
+    padding-top: 10px;
+}
+
+#nav {
+    margin-bottom: 10px;
+    background-color: #043927;
 }
