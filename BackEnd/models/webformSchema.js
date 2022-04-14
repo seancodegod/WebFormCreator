@@ -13,4 +13,4 @@ var webformSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('webform', messageSchema);
+module.exports = mongoose.model('webform', webformSchema);
