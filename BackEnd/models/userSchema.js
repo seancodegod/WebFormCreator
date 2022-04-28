@@ -6,7 +6,6 @@ var userSchema = new Schema({
         firstName: String,
         lastName: String,
         age: Number,
-        gender: String,
         address : {
             line1: String,
             line2: String,
@@ -23,7 +22,6 @@ var userSchema = new Schema({
             active:[{type: Schema.Types.ObjectId, ref:'webform'}],
             inactive:[{type: Schema.Types.ObjectId, ref:'webform'}],
             drafts:[{type: Schema.Types.ObjectId, ref:'webform'}],
-
         }
 });
 
