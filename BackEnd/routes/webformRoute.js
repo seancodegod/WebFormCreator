@@ -19,9 +19,25 @@ router.post('/create/', async (req, res) => {
       });
 
       await Webform.create(newWebform);
+
+      await User.findOneAndUpdate(
+            { _id: req.body.author },
+            {
+                  $push: { [`forms.${req.body.formType}`]: newWebform._id }
+            },
+            { safe: true, multi: false });
+
+      
       res.send("success");
 
 });
+
+//Get webform by ID
+router.get('/:id/', async (req, res) => {
+      var user = await Webform.findById(req.params.id);
+      res.send(user);
+});
+
 
 
 
