@@ -2,12 +2,14 @@ import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 
 export const SidebarData = [
+    /*
     {
         title: 'Home',
         path: '/',
         icon: <AiIcons.AiTwotoneHome />,
         cName: 'nav-text'
     },
+    */
     {
         title: 'Create Webform',
         path: '/create-webform',
@@ -26,6 +28,7 @@ export const SidebarData = [
         icon: <AiIcons.AiFillFileAdd />,
         cName: 'nav-text'
     },
+    /*
     {
         title: 'FAQ',
         path: '/faq',
@@ -44,4 +47,5 @@ export const SidebarData = [
         icon: <AiIcons.AiOutlineLogout />,
         cName: 'nav-text'
     }
+    */
 ]

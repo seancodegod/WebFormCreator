@@ -10,12 +10,14 @@ import WebFormTemplates from './components/WebFormTemplates/WebFormTemplates';
 import SideBar from './components/Sidebar/sidebar';
 import Logout from './components/Logout/logout';
 import Settings from './components/Settings/settings';
+import NavBar from './components/NavBar/navBar';
 
 function App() {
   return (
     <React.Fragment>
+      <NavBar />
       <SideBar />
-      <div>
+      <div className="container">
         <Switch>
           <Route path="/create-webform" component={CreateWebForm} />
           <Route path="/saved-webforms" component={SavedWebForms} />

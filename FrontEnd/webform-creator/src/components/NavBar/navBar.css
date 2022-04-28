@@ -3,17 +3,19 @@
     padding-right: 20px;
 }
 
-.center {
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.nav-custom {
+    height: 110px;
+}
+
+.list-elements {
+    margin-left: 300px;
 
 }
 
 .logo {
     position: absolute;
+    z-index: 1;
+    left: 80px;
 }
 
 #logoImage {
@@ -23,4 +25,13 @@
 #nav {
     margin-bottom: 10px;
     background-color: #043927;
+}
+
+.user {
+    position: absolute;
+    right: 0px;
+}
+
+#user-name {
+    color: #c5b47c;
 }
