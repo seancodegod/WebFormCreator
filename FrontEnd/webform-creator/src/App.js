@@ -5,7 +5,7 @@ import FAQ from './components/FAQ';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
-import CreateWebForm from './components/CreateWebForm';
+import CreateWebForm from './components/CreateWebForm/CreateWebForm';
 import WebFormTemplates from './components/WebFormTemplates/WebFormTemplates';
 import SideBar from './components/Sidebar/sidebar';
 import Logout from './components/Logout/logout';
