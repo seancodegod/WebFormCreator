@@ -3,14 +3,9 @@ const {Schema} = mongoose;
 
 
 var elementSchema = new Schema({
-
-
-
-    title: String,
-    input: String,
-
-    
-    
+    label: String,
+    inputType: String,
+    isRequired: Boolean
 });
 
 module.exports = mongoose.model('element', elementSchema);
