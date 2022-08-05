@@ -1,3 +1,6 @@
+// Code authored by Lincoln Bartlett
+// lincolnbartlett@gmail.com
+
 // EXPRESS -  API route manager   
 const express = require('express');
 const app = express();
@@ -11,8 +14,9 @@ const corsOptions = {
 
 //BODYPARSER- Request parsing
 const bodyparser = require('body-parser');
-//app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
+
+
 
 // Logging
 const morgan = require('morgan');
